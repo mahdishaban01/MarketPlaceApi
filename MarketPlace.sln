@@ -7,9 +7,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F5FB2EF6-5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C215C45D-0840-4D1E-A253-0AB13C557779}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Framework", "00.Framework", "{D4649C86-03A9-4B06-AB2F-5C8F999EF688}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Modules", "01.Modules", "{B76B219D-5183-4113-8425-556B382DF026}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Endpoints", "02.Endpoints", "{60CA26DE-1AE8-4DA8-AFF0-7F9B5081984D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Base", "src\00.Framework\Framework.Base\Framework.Base.csproj", "{105A3093-3DF3-4A2B-A890-2796CDFAAA9F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{105A3093-3DF3-4A2B-A890-2796CDFAAA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105A3093-3DF3-4A2B-A890-2796CDFAAA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105A3093-3DF3-4A2B-A890-2796CDFAAA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105A3093-3DF3-4A2B-A890-2796CDFAAA9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4649C86-03A9-4B06-AB2F-5C8F999EF688} = {C215C45D-0840-4D1E-A253-0AB13C557779}
+		{B76B219D-5183-4113-8425-556B382DF026} = {C215C45D-0840-4D1E-A253-0AB13C557779}
+		{60CA26DE-1AE8-4DA8-AFF0-7F9B5081984D} = {C215C45D-0840-4D1E-A253-0AB13C557779}
+		{105A3093-3DF3-4A2B-A890-2796CDFAAA9F} = {D4649C86-03A9-4B06-AB2F-5C8F999EF688}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B47156E0-B417-48CE-93AE-FF38842AE71F}
