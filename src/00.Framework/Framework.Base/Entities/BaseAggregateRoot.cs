@@ -6,10 +6,7 @@ public abstract class BaseAggregateRoot<TId> where TId : IEquatable<TId>
 {
     private readonly List<IEvent> _events;
 
-    protected BaseAggregateRoot()
-    {
-        _events = [];
-    }
+    protected BaseAggregateRoot() => _events = [];
 
     public TId Id { get; protected set; } = default!;
     public DateTime InsertOn { get; set; }
@@ -42,9 +39,7 @@ public abstract class BaseAggregateRoot<TId> where TId : IEquatable<TId>
 
     public override bool Equals(object? obj)
     {
-        var other = obj as BaseAggregateRoot<TId>;
-
-        if (ReferenceEquals(other, null))
+        if (obj is not BaseAggregateRoot<TId> other)
             return false;
 
         if (ReferenceEquals(this, other))
@@ -53,18 +48,15 @@ public abstract class BaseAggregateRoot<TId> where TId : IEquatable<TId>
         if (GetType() != other.GetType())
             return false;
 
-        //if (Id == default || other.Id == default)
-        //    return false;
-
         return Id.Equals(other.Id);
     }
 
     public static bool operator ==(BaseAggregateRoot<TId> a, BaseAggregateRoot<TId> b)
     {
-        if (ReferenceEquals(a, null) && ReferenceEquals(b, null))
+        if (a is null && b is null)
             return true;
 
-        if (ReferenceEquals(a, null) || ReferenceEquals(b, null))
+        if (a is null || b is null)
             return false;
 
         return a.Equals(b);
