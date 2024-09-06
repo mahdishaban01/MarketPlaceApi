@@ -1,6 +1,4 @@
-﻿using Framework.Base.Database;
-using Microsoft.Data.SqlClient;
-using System.Data;
+﻿using Microsoft.Data.SqlClient;
 
 namespace MarketPlace.Infra.Data.Sql.Common;
 

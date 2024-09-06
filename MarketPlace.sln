@@ -19,13 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{17AD0E10
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Endpoints", "03.Endpoints", "{5B49DAE2-7ECF-4F26-9548-44BB2BC694BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Core.AppServices.Commands", "src\01.Core\MarketPlace.Core.AppServices.Commands\MarketPlace.Core.AppServices.Commands.csproj", "{3C6B0FAC-F86A-411F-9C94-EF658F7C3D0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Core.AppServices.Commands", "src\01.Core\MarketPlace.Core.AppServices.Commands\MarketPlace.Core.AppServices.Commands.csproj", "{3C6B0FAC-F86A-411F-9C94-EF658F7C3D0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Core.AppServices.Queries", "src\01.Core\MarketPlace.Core.AppServices.Queries\MarketPlace.Core.AppServices.Queries.csproj", "{246354FB-ACAB-4ECF-B0AB-42D5E3A772CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Core.AppServices.Queries", "src\01.Core\MarketPlace.Core.AppServices.Queries\MarketPlace.Core.AppServices.Queries.csproj", "{246354FB-ACAB-4ECF-B0AB-42D5E3A772CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Core.Domain", "src\01.Core\MarketPlace.Core.Domain\MarketPlace.Core.Domain.csproj", "{8059229A-D1D0-41C2-A761-4A070452EFD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Core.Domain", "src\01.Core\MarketPlace.Core.Domain\MarketPlace.Core.Domain.csproj", "{8059229A-D1D0-41C2-A761-4A070452EFD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Infra.Data.Sql", "src\02.Infra\MarketPlace.Infra.Data.Sql\MarketPlace.Infra.Data.Sql.csproj", "{638748D3-8E40-4A12-B3B5-5A27A4D76018}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Infra.Data.Sql", "src\02.Infra\MarketPlace.Infra.Data.Sql\MarketPlace.Infra.Data.Sql.csproj", "{638748D3-8E40-4A12-B3B5-5A27A4D76018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Endpoints.Api.Rest", "src\03.Endpoints\MarketPlace.Endpoints.Api.Rest\MarketPlace.Endpoints.Api.Rest.csproj", "{BB3CEFD8-AD72-42B2-91D9-0585A8758C56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{638748D3-8E40-4A12-B3B5-5A27A4D76018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{638748D3-8E40-4A12-B3B5-5A27A4D76018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{638748D3-8E40-4A12-B3B5-5A27A4D76018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3CEFD8-AD72-42B2-91D9-0585A8758C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3CEFD8-AD72-42B2-91D9-0585A8758C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3CEFD8-AD72-42B2-91D9-0585A8758C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3CEFD8-AD72-42B2-91D9-0585A8758C56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{246354FB-ACAB-4ECF-B0AB-42D5E3A772CC} = {60CA26DE-1AE8-4DA8-AFF0-7F9B5081984D}
 		{8059229A-D1D0-41C2-A761-4A070452EFD7} = {60CA26DE-1AE8-4DA8-AFF0-7F9B5081984D}
 		{638748D3-8E40-4A12-B3B5-5A27A4D76018} = {B0F0187F-57D5-4FF9-AD71-0E8F574F05E2}
+		{BB3CEFD8-AD72-42B2-91D9-0585A8758C56} = {5B49DAE2-7ECF-4F26-9548-44BB2BC694BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B47156E0-B417-48CE-93AE-FF38842AE71F}
