@@ -11,8 +11,8 @@ public abstract class BaseAggregateRoot<TId> where TId : IEquatable<TId>
     public TId Id { get; protected set; } = default!;
     public DateTime InsertOn { get; set; }
     public DateTime? UpdateOn { get; set; }
-    public string InsertBy { get; set; } = null!;
-    public string? UpdateBy { get; set; }
+    public int InsertBy { get; set; }
+    public int? UpdateBy { get; set; }
     public bool IsActive { get; set; } = true;
     public byte[] RowVersion { get; set; } = null!;
 

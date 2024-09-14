@@ -1,9 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MarketPlace.Core.Domain.Account.Users.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace MarketPlace.Infra.Data.Sql.Common;
 
 public class MarketPlaceDbContext(DbContextOptions<MarketPlaceDbContext> options) : DbContext(options)
 {
+    public DbSet<User> Users { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

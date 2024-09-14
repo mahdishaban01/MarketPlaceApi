@@ -1,4 +1,4 @@
-﻿namespace Framework.Base.Constants;
+﻿namespace MarketPlace.Core.Domain.Common.Constants;
 
 public class DatabaseConstants
 {

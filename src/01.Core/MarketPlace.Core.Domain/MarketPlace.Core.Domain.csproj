@@ -6,4 +6,21 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Account\Users\Commands\" />
+    <Folder Include="Samples\Commands\" />
+    <Folder Include="Samples\Dtos\" />
+    <Folder Include="Samples\Entities\" />
+    <Folder Include="Samples\Enums\" />
+    <Folder Include="Samples\Events\" />
+    <Folder Include="Samples\Queries\" />
+    <Folder Include="Samples\QueryServices\" />
+    <Folder Include="Samples\Repositories\" />
+    <Folder Include="Samples\ValueObjects\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\00.Framework\Framework.Base\Framework.Base.csproj" />
+  </ItemGroup>
+
 </Project>

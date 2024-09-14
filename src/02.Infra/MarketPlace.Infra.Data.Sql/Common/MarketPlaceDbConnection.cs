@@ -1,4 +1,4 @@
-﻿using Framework.Base.Constants;
+﻿using MarketPlace.Core.Domain.Common.Constants;
 
 namespace MarketPlace.Infra.Data.Sql.Common;
 
